@@ -5,7 +5,7 @@ This repo is a demo of executing homomorphic cryptography on top the Cartesi vir
 ## Quickstart
 
 To launch this stuff inside a Cartesi machine follow these steps:
-1. Prepare the dev environment and place the RISC-V toolchain to the `/toolchain` directory.
+1. Prepare development environment and place the RISC-V toolchain to the `/toolchain` directory.
 2. Create build directory: `mkdir build && cd build`.
 3. Build project using the provided toolchain file: `cmake -DCMAKE_TOOLCHAIN_FILE=../riscv.toolchain ..`.
 4. Copy `string_cap_char_fhe_test` and `third-party/tfhe/src/libtfhe/libtfhe-nayuki-portable.so` to the machine.
