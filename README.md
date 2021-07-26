@@ -9,7 +9,7 @@ To launch this stuff inside a Cartesi machine follow these steps:
 2. Create build directory: `mkdir build && cd build`.
 3. Build project using the provided toolchain file: `cmake -DCMAKE_TOOLCHAIN_FILE=../riscv.toolchain ..`.
 4. Copy `string_cap_char_fhe_test` and `third-party/tfhe/src/libtfhe/libtfhe-nayuki-portable.so` to the machine.
-5. Execute demo on the machine: `cartesi-machine -- "LD_LIBRARY_PATH=/fhe /fhe/string_cap_char_fhe_test test"`.
+5. Execute demo on the machine: `cartesi-machine --ram-length=1024Mi -- "LD_LIBRARY_PATH=/fhe /fhe/string_cap_char_fhe_test test"`.
 
 ## Notes
 
